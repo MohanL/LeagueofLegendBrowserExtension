@@ -1,8 +1,8 @@
 {
 	"manifest_version":2, 
 	
-	"name": "check zeroelov",
-	"description":"This extension alerts the user if summoner zeroelov starts to play a game",
+	"name": "",
+	"description":"This extension notifies the user if summoner zeroelov plays too many league games",
 	"version":"1.0",
 	
 	"browser_action":{
@@ -11,7 +11,7 @@
 	     	"38":"32.png"
 			},
 		"default_popup": "popup.html",
-		"default_title": "summoner zeroelov's league status"			   
+		"default_title": "zeroelov"			   
 	},
 	
 	"permissions": [
