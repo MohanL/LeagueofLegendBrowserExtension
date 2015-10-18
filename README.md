@@ -1,8 +1,8 @@
 # LightWeightExtensions
 Chrome/Firefox Extensions
 
-This extension automatically detects summoner zeroelov's game status
-Goal for now: 1. popup to show if zeroelov is in a game. 
+This extension automatically detects summoner's game status
+Goal for now: 1. popup to show if summoner is in a game. 
               2. check out past games in 10 hours and return prediction. 
               3. differentiate time (diurnal or nocturnal)
 
@@ -20,3 +20,5 @@ Implementation details:
 			  	    analyze the time of the games
 Progress: 
 			  1. retrieve SummonerID and SummerName.
+			  2. retrieve current game info, the xmlhttprequest is broken
+			  
