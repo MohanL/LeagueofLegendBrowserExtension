@@ -29,7 +29,7 @@
       var myArr = JSON.parse(xhttp.responseText);
       var SUMMONER_ID = myArr["zeroelov"].id;
       document.getElementById("status").innerHTML = SUMMONER_ID;
-      summonerPastGames();
+      //summonerPastGames();
     }
    }
    xhttp.open("GET", "https://na.api.pvp.net/api/lol/na/v1.4/summoner/by-name/"+SUMMONER_NAME+"?api_key="+API_KEY, true);
@@ -72,8 +72,6 @@
 //   true);
 //   xhttp.send();
 //}
-
-
 
 
 document.addEventListener('DOMContentLoaded', function(){ renderStatus("Hello World!"); });

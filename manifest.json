@@ -7,8 +7,8 @@
 	
 	"browser_action":{
 		"default_icon":{
-			"19":"16.png",
-	     	"38":"32.png"
+			"19":"604.png",
+	     	"38":"604.png"
 			},
 		"default_popup": "popup.html",
 		"default_title": ""			   
