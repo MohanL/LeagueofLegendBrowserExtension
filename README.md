@@ -1,14 +1,14 @@
-__LeagueofLegendBrowserExtension__
-
-cross platform league of legend browser extension for chrome, firefox and opera.
-
-
-return summoner recent game history and current in game status.
+__League of Legend Browser Extension__
+a cross platform league of legend browser extension for chrome, firefox and opera.
 
 __use__
-chrome  []
+return summoner recent game history and current in game status.
 
-firefox []
+__installation__
 
-opera   []
+chrome  [...]
+
+firefox [...]
+
+opera   [...]
 
