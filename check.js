@@ -17,31 +17,30 @@
    var xhttp = new XMLHttpRequest();
    xhttp.onreadystatechange = function() {
    if (xhttp.readyState == 4) {
-      var myArr = JSON.parse(xhttp.responseText);
-      var SUMMONER_ID = myArr["zeroelov"].id;
+       var myArr = JSON.parse(xhttp.responseText);
+       var SUMMONER_ID = myArr["zeroelov"].id;
        document.getElementById("user").innerHTML = SUMMONER_ID;
-      summonerCurrentGame();
     }
    }
    xhttp.open("GET", "https://na.api.pvp.net/api/lol/na/v1.4/summoner/by-name/"+SUMMONER_NAME+"?api_key="+API_KEY, true);
    xhttp.send();
 }
 
- function renderStatus(statusText) {
-   summonerIdLookUp();
+function renderStatus() {
+  document.getElementById("currentgame").innerHTML = "asdf";
 }
 
 
+
 function summonerCurrentGame(){
-   var API_KEY = "6ee2214a-80ef-4554-89f3-80aa72c22f29";
-   var xhttp = new XMLHttpRequest();
-   xhttp.onreadystatechange = function() {
-   if (xhttp.readyState == 4 && xhttp.status == 200) {
+   var xh = new XMLHttpRequest();
+   xh.open("GET", 
+   "https://na.api.pvp.net/observer-mode/rest/consumer/getSpectatorGameInfo/NA1/38996502?api_key=6ee2214a-80ef-4554-89f3-80aa72c22f29",
+   true);
+   xh.onreadystatechange = function() {
+   if (xh.readyState == 4) {
       document.getElementById("currentgame").innerHTML = "asdf";
     }
    }
-   xhttp.open("GET", 
-   "https://na.api.pvp.net/observer-mode/rest/consumer/getSpectatorGameInfo/NA1/38996502?api_key=6ee2214a-80ef-4554-89f3-80aa72c22f29",
-   true);
-   xhttp.send();
+   xh.send();
   }
