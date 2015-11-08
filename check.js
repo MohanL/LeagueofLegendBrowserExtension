@@ -3,10 +3,10 @@
    var xhttp = new XMLHttpRequest();
    xhttp.onreadystatechange = function() {
    if (xhttp.readyState == 4) {
-      document.getElementById("pastgames").innerHTML = "asdf";
+      document.getElementById("pastgames").innerHTML = xhttp.responseText;
     }
    }
-   xhttp.open("GET", "https://na.api.pvp.net/api/lol/na/v1.3/game/by-summoner/38996502?api_key=" +API_KEY, true);
+   xhttp.open("GET", "https://na.api.pvp.net/api/lol/na/v1.3/game/by-summoner/38996502/recent?api_key=6ee2214a-80ef-4554-89f3-80aa72c22f29", true);
    xhttp.send();
  }
 
@@ -27,7 +27,7 @@
 }
 
 function renderStatus() {
-  document.getElementById("currentgame").innerHTML = "asdf";
+  summonerPastGames();
 }
 
 
@@ -39,7 +39,7 @@ function summonerCurrentGame(){
    true);
    xh.onreadystatechange = function() {
    if (xh.readyState == 4) {
-      document.getElementById("currentgame").innerHTML = "asdf";
+      document.getElementById("currentgame").innerHTML = xh.responseText;
     }
    }
    xh.send();

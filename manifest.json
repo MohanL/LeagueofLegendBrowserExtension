@@ -13,12 +13,8 @@
 		"default_popup": "popup.html",
 		"default_title": ""			   
 	},
-	
-	"permissions": [
-		"activeTab",
-		"https://ajax.googleapis.com/"
-	]
- 
- }
-	
-	
+    "background": {
+    "scripts": ["check.js"],
+    "persistent": false
+	 }
+}
