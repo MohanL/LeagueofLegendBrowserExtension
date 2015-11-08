@@ -16,5 +16,8 @@
     "background": {
     "scripts": ["check.js"],
     "persistent": false
-	 }
+	 },
+	 "permissions": [
+    	"https://na.api.pvp.net/"
+  	 ]
 }
