@@ -1,4 +1,5 @@
 __League of Legend Browser Extension__
+
 a cross platform league of legend browser extension for chrome, firefox and opera.
 
 __Use__
