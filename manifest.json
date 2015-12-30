@@ -1,8 +1,8 @@
 {
 	"manifest_version":2, 
 	
-	"name": "",
-	"description":"",
+	"name": "zeroelov league of legend game frequency checker",
+	"description":"check out zeroelov",
 	"version":"1.0",	
 	
 	"browser_action":{

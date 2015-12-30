@@ -2,12 +2,13 @@
    "http://www.w3.org/TR/html4/strict.dtd">
 <HTML>
 	<head>
-	<script src="check.js"></script>
+	<script src="check.js">
+	</script>
 	<style>
 		 body{
    		 background-image:url("http://www.iphonehdwallpapers.net/wp-content/cache/7f463a3e02e8669e6420f9363c3070a8_w324_h576_sc.jpg");
-   		 	 width: 320px;
-    	 	 height: 500px;
+   		 	 width: 300px;
+    	 	 height: 450px;
     	 	 color : white;
 		  }
 		 #champion{
@@ -17,15 +18,19 @@
 		 }
 	</style>
 	</head>
-	<body onload="renderStatus();">
+	<body>
+
+	<h1 id="title">search summoner name</h1>
+	<input type="text" id="myTextField"  value="zeroelov"/>
+	<input type="submit" id="but" value="Change"/>
+	
 	<div class="user">
-		<p><img id= "champion" src = "http://ddragon.leagueoflegends.com/cdn/5.21.1/img/champion/Vayne.png">zeroelov</p>
-	</div>
-	<div>
-		<p id="currentgame"> game status </p>
+		<p id="user"></p>
 	</div>
 	<div >
-		<p id="pastgames" > how many gamed played today </p>
+		<p id="pastgames3" > </p>
+		<p id="pastgames5" > </p>
+		<p id="pastgames10" > </p>
 	</div>
 	<body>
 </html>
