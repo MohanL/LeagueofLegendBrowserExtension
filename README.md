@@ -1,14 +1,14 @@
-__League of Legend Browser Extension__
+__League of Legend Game Frqeuncy Check Extension__
 
 a cross platform league of legend browser extension for chrome, firefox and opera.
 
 __Use__
 
-return summoner's recent game history and current game status.
+return summoner's time span for the most recent 3 games, 5 games and 10 games
 
 __Installation__
 
-chrome  [...]
+chrome  [...] done
  
 firefox [...]
 
