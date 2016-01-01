@@ -18,7 +18,7 @@ else
       var obj = JSON.parse(xhttp.responseText);
       
       var lastGame = obj['games'][0]['createDate'];
-      var last3Game = obj['games'][3]['createDate'];
+      var last3Game = obj['games'][2]['createDate'];
       var last5Game = obj['games'][5]['createDate'];
       var last9Game = obj['games'][9]['createDate'];
       
@@ -42,12 +42,12 @@ else
       }
       if (hours5 < 5)
       { 
-        var str = "5 games in " + hours3 + " hours";
+        var str = "6 games in " + hours3 + " hours";
         document.getElementById("pastgames5").innerHTML = str
       }
       else
       { 
-        var str = "5 games in " + hours5 + " hours";
+        var str = "6 games in " + hours5 + " hours";
         document.getElementById("pastgames5").innerHTML = str
       }
       if(hours9 < 10)
